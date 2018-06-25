@@ -1,8 +1,8 @@
-//----- READ ME ----- //
+# READ ME
 Author: Derek Fermaint
 K12 Portland, Oregon June 15th, 2018
 
-//----- DESCRIPTION ----- //
+# DESCRIPTION
 This program is a simple example of a Java Spring Config server.
 
 It uses git for version control, and has three services:
@@ -14,22 +14,18 @@ It uses git for version control, and has three services:
 3. currency-conversion-service: depends on the currency-exchange-service values in order to
     calculate quantities of currency.
 
-//----- BEFORE USE ----- //
-
+# BEFORE USE
 The path of the git config repo needs to be updated to where it's stored locally.
 Path uri is located in SpringCloudConfigServer/spring-cloud-config-server/main/resources/application.properties
 
 
-//----- PORT INFORMATION ----- //
-
+# PORT INFORMATION
 spring-cloud-config-server      8888
 limits-service                  8080
 currency-exchange-service       8000
 currency-conversion-service     8100
 
-
-//----- USEFUL ENDPOINTS ----- //
-
+# USEFUL ENDPOINTS
 http://localhost:8080/limits                                                     displays the upper and lower bound values
 
 http://localhost:8000/currency-exchange/from/USD/to/INR                          displays conversion rate information from American to Indian currency
